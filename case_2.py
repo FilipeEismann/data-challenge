@@ -1,9 +1,10 @@
 import os
-from dotenv import load_dotenv
+import datetime
 
 import mysql.connector
 import pandas as pd
-import datetime
+from dotenv import load_dotenv
+
 
 def connect_to_db():
     
