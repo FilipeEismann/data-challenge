@@ -35,6 +35,7 @@ def retrieve_data(product_code: int, store_code: int, date: list):
     
     cursor = connection.cursor(dictionary=True)
     
+    # Abordagem por intervalo
     query = f'''
         SELECT * 
         FROM data_product_sales dps 
